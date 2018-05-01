@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">WbutCollegeSelector</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_username">Enter Your Username</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string-array name="Users">
+        <item>Admin</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="States">
+        <item>Andhra Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh </item>
+        <item>Jammu &amp; Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+    <string-array name="InstituteType">
+        <item>Government</item>
+        <item>Private</item>
+    </string-array>
+    <string name="title_activity_student_login">StudentLogin</string>
+    <string name="name" />
+    <string name="reset" />
+    <string name="register" />
+    <string name="emailid" />
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="select_user">Select User</string>
+    <string name="enter_your_string_name">Enter your @string/name</string>
+    <string name="enter_your_email_id">enter your email Id</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="title_activity_fill_college_choice">FillCollegeChoice</string>
+</resources>

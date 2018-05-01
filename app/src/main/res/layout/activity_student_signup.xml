@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.wbutcollegeselector.StudentSignup">
+
+
+    <TextView
+        android:id="@+id/STVN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SETN"
+        android:layout_alignLeft="@+id/STVUN"
+        android:layout_alignStart="@+id/STVUN"
+        android:layout_marginBottom="10dp"
+        android:text="Enter name" />
+
+    <TextView
+        android:id="@+id/STVUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/username"
+        android:layout_alignBaseline="@+id/SETUN"
+        android:layout_alignBottom="@+id/SETUN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/STVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SETE"
+        android:layout_alignBottom="@+id/SETE"
+        android:layout_alignLeft="@+id/STVUN"
+        android:layout_alignStart="@+id/STVUN"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/STVP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SETP"
+        android:layout_alignBottom="@+id/SETP"
+        android:layout_alignLeft="@+id/STVE"
+        android:layout_alignStart="@+id/STVE"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/SETN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SETUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_your_username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/SETWR"
+        android:layout_alignLeft="@+id/SETN"
+        android:layout_alignStart="@+id/SETN"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:id="@+id/SETE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_your_email_id"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/STVP"
+        android:layout_alignLeft="@+id/SETUN"
+        android:layout_alignStart="@+id/SETUN"
+        android:layout_marginBottom="57dp" />
+
+    <EditText
+        android:id="@+id/SETP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/SSRB"
+        android:layout_alignLeft="@+id/SETE"
+        android:layout_alignStart="@+id/SETE" />
+
+    <Button
+        android:id="@+id/SSRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/SETP"
+        android:layout_toStartOf="@+id/SETP"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:id="@+id/SSRGB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SETP"
+        android:layout_alignRight="@+id/SETP"
+        android:layout_alignTop="@+id/SSRB"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/STVWR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/STVE"
+        android:layout_marginBottom="59dp"
+        android:text="Wbut Roll Number" />
+
+    <EditText
+        android:id="@+id/SETWR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/STVE"
+        android:layout_alignLeft="@+id/SETE"
+        android:layout_alignStart="@+id/SETE"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Enter Your Wbut Roll"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/gender_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SETN"
+        android:layout_alignRight="@+id/SSRGB"
+        android:layout_alignEnd="@+id/SSRGB"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="26dp">
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/male_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/female_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "female"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.wbutcollegeselector.MainActivity">
+
+    <TextView
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:text="@string/select_user"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnsignup"
+        android:layout_toStartOf="@+id/btnsignup"
+        android:layout_marginTop="11dp" />
+
+    <Spinner
+        android:id="@+id/UserSelectSpinner"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/Users"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="135dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/btnsignup"
+        android:layout_toStartOf="@+id/btnsignup"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="107dp" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="135dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_alignBaseline="@+id/btnlogin"
+        android:layout_alignBottom="@+id/btnlogin"
+        android:layout_alignRight="@+id/UserSelectSpinner"
+        android:layout_alignEnd="@+id/UserSelectSpinner" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp" />
+
+</RelativeLayout>
