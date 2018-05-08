@@ -69,9 +69,7 @@ public class AdminLogin extends AppCompatActivity {
                         String user = jObj.getJSONObject("user").getString("name");
                         String email=jObj.getJSONObject("user").getString("email");
                         // Launch User activity
-                        Intent intent = new Intent(
-                                AdminLogin.this,
-                                AdminHome.class);
+                        Intent intent = new Intent(AdminLogin.this, AdminHome.class);
                         Admin a1=new Admin(user,email);
                         intent.putExtra("useradmin", a1);
                         startActivity(intent);
